@@ -44,3 +44,14 @@ function guardarDatos(){
 	caja.appendChild(comentario);
 /*finalmente le asignamos el padre (contenedor) al hijo (caja), donde me muestra todo el contenedor creado*/
 	contenedor.appendChild(caja);
+/*funcion boton 2*/
+function init(){
+	var button = document.getElementById("boton2");
+	button.addEventListener("click", limpiar);
+}
+
+
+function limpiarDatos(){
+	localStorage.clear();
+	guardarDatos();	
+}
